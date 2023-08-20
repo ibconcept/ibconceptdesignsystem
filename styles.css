@@ -1,0 +1,109 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.navigation {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    min-width: 220px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.navigation ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: purple;
+}
+img {
+    opacity: 0.7;
+    max-width: 100px;
+}
+main {
+    flex: 1;
+    padding: 40px;
+    background-color: plum;
+    margin-left: 340px;
+}
+
+/* Styling for each section */
+#brand { background-color: #f7f7f7; }
+#principles { background-color: #e6e6e6; }
+#elements { background-color: #d5d5d5; }
+#typography { background-color: #c4c4c4; }
+#components { background-color: #b3b3b3; }
+#accessibility { background-color: #a2a2a2; }
+#languages { background-color: #919191; }
+#collaboration { background-color: #808080; }
+#development { background-color: #6f6f6f; }
+#goal { background-color: #5e5e5e; }
+#documentation { background-color: #4d4d4d;  }
+
+/* Other common styles */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    background-color: plum;
+    padding: 8px;
+    color: #000000;
+}
+
+ul {
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        position: relative;
+        padding: 20px 0;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
